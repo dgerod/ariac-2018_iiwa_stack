@@ -109,6 +109,7 @@
   EffortJointInterface_trajectory_controller:
     type: effort_controllers/JointTrajectoryController
     joints: 
+      - linear_arm_actuator_joint
       - iiwa_joint_1
       - iiwa_joint_2
       - iiwa_joint_3
@@ -119,6 +120,7 @@
       
       # VALUES ARE NOT CORRECT !
     gains:
+      linear_arm_actuator_joint: {p: 10000, d: 500, i: 0, i_clamp: 1}
       iiwa_joint_1: {p: 500,  d: 30, i: 15, i_clamp: 30}
       iiwa_joint_2: {p: 200,  d: 10, i: 10, i_clamp: 30}
       iiwa_joint_3: {p: 65,  d: 10, i: 15, i_clamp: 30}
