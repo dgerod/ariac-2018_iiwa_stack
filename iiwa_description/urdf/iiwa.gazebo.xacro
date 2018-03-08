@@ -13,6 +13,7 @@
 
     <!-- Link0 -->
     <gazebo reference="${robot_name}_link_0">
+      <turnGravityOff>true</turnGravityOff>
       <material>Gazebo/Grey</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
@@ -20,6 +21,7 @@
 
     <!-- Link1 -->
     <gazebo reference="${robot_name}_link_1">
+      <turnGravityOff>true</turnGravityOff>
       <material>Gazebo/Orange</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
@@ -27,6 +29,7 @@
 
     <!-- Link2 -->
     <gazebo reference="${robot_name}_link_2">
+      <turnGravityOff>true</turnGravityOff>
       <material>Gazebo/Orange</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
@@ -34,6 +37,7 @@
 
     <!-- Link3 -->
     <gazebo reference="${robot_name}_link_3">
+      <turnGravityOff>true</turnGravityOff>
       <material>Gazebo/Orange</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
@@ -42,6 +46,7 @@
 
     <!-- Link4 -->
     <gazebo reference="${robot_name}_link_4">
+      <turnGravityOff>true</turnGravityOff>
       <material>Gazebo/Orange</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
@@ -49,6 +54,7 @@
 
     <!-- Link5 -->
     <gazebo reference="${robot_name}_link_5">
+      <turnGravityOff>true</turnGravityOff>
       <material>Gazebo/Orange</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
@@ -56,6 +62,7 @@
 
     <!-- Link6 -->
     <gazebo reference="${robot_name}_link_6">
+      <turnGravityOff>true</turnGravityOff>
       <material>Gazebo/Orange</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
@@ -63,6 +70,7 @@
 
     <!-- Link7 -->
     <gazebo reference="${robot_name}_link_7">
+      <turnGravityOff>true</turnGravityOff>
       <material>Gazebo/Grey</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
