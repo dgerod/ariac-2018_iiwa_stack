@@ -9,3 +9,11 @@ catkin_package(
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
+
+# Install all the world files
+install(DIRECTORY worlds/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/worlds)
+
+# Install all the launch files
+install(DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch)

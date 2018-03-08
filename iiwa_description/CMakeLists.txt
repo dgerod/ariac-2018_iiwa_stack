@@ -9,3 +9,15 @@ catkin_package(
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
+
+# Install all the launch files
+install(DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch)
+
+# Install all the meshes
+install(DIRECTORY meshes/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes)
+
+# Install all the urdf files
+install(DIRECTORY urdf/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf)
