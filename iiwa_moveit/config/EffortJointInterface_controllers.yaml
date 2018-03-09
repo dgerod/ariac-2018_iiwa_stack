@@ -1,9 +1,10 @@
 controller_list:
   - name: EffortJointInterface_trajectory_controller
-    action_ns: follow_joint_trajectory
+    action_ns: ariac/arm/follow_joint_trajectory
     type: FollowJointTrajectory
     default: true
     joints: 
+      - linear_arm_actuator_joint
       - iiwa_joint_1
       - iiwa_joint_2
       - iiwa_joint_3

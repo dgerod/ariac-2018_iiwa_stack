@@ -15,7 +15,8 @@
     <arg name="rviz" default="true" />
     
     <remap from="/$(arg hardware_interface)_trajectory_controller/follow_joint_trajectory" 
-           to="/$(arg robot_name)/$(arg hardware_interface)_trajectory_controller/follow_joint_trajectory" />
+        to="ariac/arm/follow_joint_trajectory" />
+    <remap if="$(arg sim)" from="joint_states" to="ariac/joint_states"/>
     <remap from="robot_description" to="/$(arg robot_name)/robot_description" /> 
     <remap from="/get_planning_scene" to="/$(arg robot_name)/get_planning_scene" /> 
     
