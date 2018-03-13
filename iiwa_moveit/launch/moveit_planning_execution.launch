@@ -13,6 +13,8 @@
     <!-- Model of the iiwa to use : iiwa7, iiwa14 -->
     <arg name="model" default="iiwa7"/>
     <arg name="rviz" default="true" />
+    <!-- If true, launch the gazebo simulated robot -->
+    <arg name="gazebo" default="true" />
     
     <remap from="/$(arg hardware_interface)_trajectory_controller/follow_joint_trajectory" 
         to="ariac/arm/follow_joint_trajectory" />
@@ -24,7 +26,7 @@
     <group if="$(arg sim)">
         
         <!-- Load Gazebo with given values -->
-        <include file="$(find iiwa_gazebo)/launch/iiwa_gazebo.launch">
+        <include if="$(arg gazebo)" file="$(find iiwa_gazebo)/launch/iiwa_gazebo.launch">
             <arg name="hardware_interface" value="$(arg hardware_interface)"/>
             <arg name="robot_name" value="$(arg robot_name)" />
             <arg name="model" value="$(arg model)"/>
