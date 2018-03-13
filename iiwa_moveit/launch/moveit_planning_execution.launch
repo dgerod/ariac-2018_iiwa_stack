@@ -16,9 +16,13 @@
     <!-- If true, launch the gazebo simulated robot -->
     <arg name="gazebo" default="true" />
     
-    <remap from="/$(arg hardware_interface)_trajectory_controller/follow_joint_trajectory" 
+    <!--
+    <remap from="/$(arg robot_name)/$(arg hardware_interface)_trajectory_controller/follow_joint_trajectory"
         to="ariac/arm/follow_joint_trajectory" />
-    <remap if="$(arg sim)" from="joint_states" to="ariac/joint_states"/>
+        -->
+    <remap from="/$(arg robot_name)/$(arg hardware_interface)_trajectory_controller"
+        to="/$(arg hardware_interface)_trajectory_controller"/>
+    <remap if="$(arg sim)" from="joint_states" to="/$(arg robot_name)/joint_states"/>
     <remap from="robot_description" to="/$(arg robot_name)/robot_description" /> 
     <remap from="/get_planning_scene" to="/$(arg robot_name)/get_planning_scene" /> 
     
