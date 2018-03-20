@@ -5,11 +5,14 @@
   <arg name="robot_name" default="iiwa"/>
   <arg name="model" default="iiwa14"/>
   <arg name="load_robot_description" default="true"/>
+  <!-- The name of the parameter under which the URDF is loaded -->
+  <arg name="robot_description" default="robot_description"/>
 
   <include file="$(find iiwa_moveit)/launch/planning_context.launch">
     <arg name="load_robot_description" value="$(arg load_robot_description)"/>
     <arg name="hardware_interface" value="$(arg hardware_interface)"/>
     <arg name="robot_name" value="$(arg robot_name)"/>
+    <arg name="robot_description" value="$(arg robot_description)"/>
     <arg name="model" value="$(arg model)"/>
   </include>
 

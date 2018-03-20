@@ -15,6 +15,8 @@
     <arg name="rviz" default="true" />
     <!-- If true, launch the gazebo simulated robot -->
     <arg name="gazebo" default="true" />
+    <!-- The name of the parameter under which the URDF is loaded -->
+    <arg name="robot_description" default="/robot_description" />
     
     <remap from="/$(arg robot_name)/$(arg hardware_interface)_trajectory_controller/follow_joint_trajectory"
         to="/ariac/arm/follow_joint_trajectory" />
@@ -62,6 +64,7 @@
             <arg name="load_robot_description" value="false" />
             <arg name="hardware_interface" value="$(arg hardware_interface)"/>
             <arg name="robot_name" value="$(arg robot_name)"/>
+            <arg name="robot_description" value="$(arg robot_description)"/>
             <arg name="model" value="$(arg model)" />
         </include>
         
