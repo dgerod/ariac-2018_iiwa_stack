@@ -1,6 +1,6 @@
 controller_list:
   - name: EffortJointInterface_trajectory_controller
-    action_ns: follow_joint_trajectory
+    action_ns: ariac/arm/follow_joint_trajectory
     type: FollowJointTrajectory
     default: true
     joints: 
