@@ -10,7 +10,7 @@
     <arg name="model" default="iiwa7" />
     
     <!-- Loads joint controller configurations from YAML file to parameter server -->
-    <rosparam file="$(find iiwa_control)/config/$(arg robot_name)_control.yaml" ns="ariac" command="load" />
+    <rosparam file="$(find iiwa_control_ariac)/config/$(arg robot_name)_control.yaml" ns="ariac" command="load" />
     
     <!-- Loads the controllers -->
     <node name="controller_spawner" pkg="controller_manager" type="controller_manager" respawn="false"

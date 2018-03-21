@@ -6,6 +6,6 @@
 
   <arg name="pipeline" default="ompl" />
 
-  <include file="$(find iiwa_moveit)/launch/$(arg pipeline)_planning_pipeline.launch.xml" />
+  <include file="$(find iiwa_moveit_ariac)/launch/$(arg pipeline)_planning_pipeline.launch.xml" />
 
 </launch>

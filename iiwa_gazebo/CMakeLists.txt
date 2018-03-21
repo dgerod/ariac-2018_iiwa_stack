@@ -5,7 +5,7 @@ find_package(catkin REQUIRED)
 
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES iiwa_gazebo
+#  LIBRARIES iiwa_gazebo_ariac
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )

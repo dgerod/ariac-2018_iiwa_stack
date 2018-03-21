@@ -32,7 +32,7 @@
     <group if="$(arg sim)">
         
         <!-- Load Gazebo with given values -->
-        <include if="$(arg gazebo)" file="$(find iiwa_gazebo)/launch/iiwa_gazebo.launch">
+        <include if="$(arg gazebo)" file="$(find iiwa_gazebo_ariac)/launch/iiwa_gazebo_ariac.launch">
             <arg name="hardware_interface" value="$(arg hardware_interface)"/>
             <arg name="robot_name" value="$(arg robot_name)" />
             <arg name="model" value="$(arg model)"/>
@@ -43,7 +43,7 @@
     <group ns="$(arg robot_name)" unless="$(arg sim)">
         
         <!-- Load controllers accordingly to parameters -->
-        <include file="$(find iiwa_control)/launch/iiwa_control.launch">
+        <include file="$(find iiwa_control_ariac)/launch/iiwa_control.launch">
             <arg name="hardware_interface" value="$(arg hardware_interface)" />
             <arg name="controllers" value="joint_state_controller $(arg hardware_interface)_trajectory_controller" />
             <arg name="robot_name" value="$(arg robot_name)" />
@@ -59,7 +59,7 @@
     
     <!-- Load move_group -->
     <group ns="$(arg robot_name)">
-        <include file="$(find iiwa_moveit)/launch/move_group.launch">
+        <include file="$(find iiwa_moveit_ariac)/launch/move_group.launch">
             <arg name="publish_monitored_planning_scene" value="true" />
             <arg name="load_robot_description" value="false" />
             <arg name="hardware_interface" value="$(arg hardware_interface)"/>
@@ -68,7 +68,7 @@
             <arg name="model" value="$(arg model)" />
         </include>
         
-        <include if="$(arg rviz)" file="$(find iiwa_moveit)/launch/moveit_rviz.launch">
+        <include if="$(arg rviz)" file="$(find iiwa_moveit_ariac)/launch/moveit_rviz.launch">
             <arg name="config" value="true"/>
         </include>
     </group>
