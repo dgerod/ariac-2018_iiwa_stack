@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(iiwa_control)
+project(iiwa_control_ariac)
 
 find_package(catkin REQUIRED)
 

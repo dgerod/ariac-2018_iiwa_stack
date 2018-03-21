@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>iiwa_control</name>
+  <name>iiwa_control_ariac</name>
   <version>1.4.0</version>
   <description>A package containing controllers used by MoveIt! and Gazebo</description>
   <author email="salvo.virga@tum.de">Salvo Virga</author>
