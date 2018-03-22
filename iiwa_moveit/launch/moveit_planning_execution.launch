@@ -12,9 +12,9 @@
     <arg name="robot_name" default="iiwa"/>
     <!-- Model of the iiwa to use : iiwa7, iiwa14 -->
     <arg name="model" default="iiwa7"/>
-    <arg name="rviz" default="true" />
+    <arg name="rviz" default="false" />
     <!-- If true, launch the gazebo simulated robot -->
-    <arg name="gazebo" default="true" />
+    <arg name="gazebo" default="false" />
     <!-- The name of the parameter under which the URDF is loaded -->
     <arg name="robot_description" default="/robot_description" />
     
