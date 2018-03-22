@@ -58,7 +58,7 @@
     </group>
     
     <!-- Load move_group -->
-    <group ns="$(arg robot_name)">
+    <!--<group ns="$(arg robot_name)">-->
         <include file="$(find iiwa_moveit)/launch/move_group.launch">
             <arg name="publish_monitored_planning_scene" value="true" />
             <arg name="load_robot_description" value="false" />
@@ -71,6 +71,6 @@
         <include if="$(arg rviz)" file="$(find iiwa_moveit)/launch/moveit_rviz.launch">
             <arg name="config" value="true"/>
         </include>
-    </group>
+    <!--</group>-->
     
 </launch>
