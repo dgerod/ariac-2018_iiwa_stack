@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>iiwa_gazebo_ariac</name>
+  <name>iiwa_gazebo</name>
   <version>1.4.0</version>
   <description>This package allows to load a KUKA LBR IIWA robot onto Gazebo</description>
   <author email="salvo.virga@tum.de">Salvo Virga</author>
@@ -10,7 +10,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>iiwa_description_ariac</run_depend>
+  <run_depend>iiwa_description</run_depend>
   <run_depend>gazebo_ros</run_depend> 
 
 </package>

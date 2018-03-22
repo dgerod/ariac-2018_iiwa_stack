@@ -1,6 +1,6 @@
 <package>
 
-  <name>iiwa_moveit_ariac</name>
+  <name>iiwa_moveit</name>
   <version>1.4.0</version>
   <description>
 	  A package with all the configuration and launch files for using the KUKA LBR IIWA with the MoveIt Motion Planning Framework
@@ -27,7 +27,7 @@
   <run_depend>joint_state_publisher</run_depend>
   <run_depend>robot_state_publisher</run_depend>
   <run_depend>xacro</run_depend>
-  <run_depend>iiwa_description_ariac</run_depend>
+  <run_depend>iiwa_description</run_depend>
 
   <buildtool_depend>catkin</buildtool_depend>
   
